@@ -51,7 +51,7 @@ const AddOrder = () => {
 
       // Make the API request to add the order
       const response = await axios.post(
-        "http://localhost:5001/api/orders", // Adjust the URL accordingly
+        "https://production-smartdelivery.onrender.com/api/orders", // Adjust the URL accordingly
         orderData,
         {
           headers: {

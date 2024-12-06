@@ -13,7 +13,7 @@ const Assignment = () => {
         // Get the token (e.g., from localStorage or any other method)
         const token = localStorage.getItem("token"); // Adjust according to your auth flow
 
-        const response = await axios.get("http://localhost:5001/api/assignments", {
+        const response = await axios.get("https://production-smartdelivery.onrender.com/api/assignments", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

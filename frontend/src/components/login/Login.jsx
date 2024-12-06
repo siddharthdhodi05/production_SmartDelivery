@@ -19,7 +19,7 @@ const Login = () => {
  const onSubmitHandler = async (e) => {
   e.preventDefault();
   try {
-    const response = await axios.post('http://localhost:5001/api/auth/login', user);
+    const response = await axios.post('https://production-smartdelivery.onrender.com/api/auth/login', user);
     console.log(response);
     if (response.data && response.data.token) {
       const { token } = response.data;

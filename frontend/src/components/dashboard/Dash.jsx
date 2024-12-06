@@ -12,7 +12,7 @@ const Dash = () => {
     const fetchCounts = async () => {
       try {
         // Fetch total orders count
-        const ordersResponse = await axios.get('http://localhost:5001/api/orders', {
+        const ordersResponse = await axios.get('https://production-smartdelivery.onrender.com/api/orders', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`, // Add token if needed
           },
@@ -20,7 +20,7 @@ const Dash = () => {
         const totalOrders = ordersResponse.data.length; // assuming the response is an array of orders
 
         // Fetch total partners count
-        const partnersResponse = await axios.get('http://localhost:5001/api/partners', {
+        const partnersResponse = await axios.get('https://production-smartdelivery.onrender.com/api/partners', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`, // Add token if needed
           },
@@ -28,7 +28,7 @@ const Dash = () => {
         const totalPartners = partnersResponse.data.length; // assuming the response is an array of partners
 
         // Fetch total assignments count
-        const assignmentsResponse = await axios.get('http://localhost:5001/api/assignments', {
+        const assignmentsResponse = await axios.get('https://production-smartdelivery.onrender.com/api/assignments', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`, // Add token if needed
           },

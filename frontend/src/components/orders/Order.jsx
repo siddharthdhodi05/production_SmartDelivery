@@ -21,7 +21,7 @@ const Order = () => {
         }
 
         // Make the API request with the token in headers
-        const response = await axios.get("http://localhost:5001/api/orders", {
+        const response = await axios.get("https://production-smartdelivery.onrender.com/api/orders", {
           headers: {
             Authorization: `Bearer ${token}`, // Adjust based on your backend's expected format
           },

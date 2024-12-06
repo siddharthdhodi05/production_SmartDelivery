@@ -18,7 +18,7 @@ const _dirname = path.resolve();
 
 const PORT = process.env.PORT || 5000;
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: "https://production-smartdelivery.onrender.com",
   credentials: true,
 };
 app.use(cors(corsOption));

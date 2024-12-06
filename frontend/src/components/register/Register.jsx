@@ -17,7 +17,7 @@ const Register = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     try {
-        const res = await axios.post(`http://localhost:5001/api/auth/register`, user, {
+        const res = await axios.post(`https://production-smartdelivery.onrender.com/api/auth/register`, user, {
             headers: {
                 "Content-Type": "application/json",
             },

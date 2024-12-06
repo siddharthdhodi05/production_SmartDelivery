@@ -36,7 +36,7 @@ const AddPartner = () => {
 
       // Make the API request
       const response = await axios.post(
-        "http://localhost:5001/api/partners",
+        "https://production-smartdelivery.onrender.com/api/partners",
         {
           name: partnerData.name,
           phone: partnerData.phone,

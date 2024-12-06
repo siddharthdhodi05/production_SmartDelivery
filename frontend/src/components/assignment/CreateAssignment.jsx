@@ -15,7 +15,7 @@ const CreateAssignment = () => {
     // Fetch available orders
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/api/orders", {
+        const response = await axios.get("https://production-smartdelivery.onrender.com/api/orders", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`, // Add token here
           },
@@ -29,7 +29,7 @@ const CreateAssignment = () => {
     // Fetch available partners
     const fetchPartners = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/api/partners", {
+        const response = await axios.get("https://production-smartdelivery.onrender.com/api/partners", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`, // Add token here
           },
@@ -61,7 +61,7 @@ const CreateAssignment = () => {
 
     try {
       await axios.post(
-        "http://localhost:5001/api/assignments",
+        "https://production-smartdelivery.onrender.com/api/assignments",
         assignmentData,
         {
           headers: {
